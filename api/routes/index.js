@@ -1,12 +1,12 @@
-const middleware = require('@blocklet/sdk/lib/middlewares');
 const router = require('express').Router();
-
-router.use('/user', middleware.user(), (req, res) => res.json(req.user || {}));
+const profileRoute = require('./profile/profile-router');
 
 router.use('/data', (req, res) =>
   res.json({
     message: 'Hello Blocklet!',
   }),
 );
+
+router.use('/user', profileRoute);
 
 module.exports = router;

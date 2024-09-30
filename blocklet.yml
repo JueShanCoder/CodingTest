@@ -5,7 +5,7 @@ keywords:
   - vue
 group: dapp
 did: z2qa2Urrzz9ekHCtxnDR2sD3fAVxb12VfgY2g
-main: api/index.js
+main: api/dev.js
 author:
   name: jueshancoder
   email: jueshancoder@gmail.com
@@ -19,6 +19,7 @@ files:
   - dist
   - logo.png
   - screenshots
+  - .env.*
 interfaces:
   - type: web
     name: publicUrl
